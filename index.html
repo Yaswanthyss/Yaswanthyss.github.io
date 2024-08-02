@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         body {
-	background-color: #2E3537;
-	font-family: 'Arial', sans-serif;
-}
+            background-color: #2E3537;
+            font-family: 'Arial', sans-serif;
+        }
 
-:root {
-	--cards: 4;
-	--cardHeight: 87vh;
-	--cardTopPadding: 1.5em;
-	--cardMargin: 4vw;
-}
+        :root {
+            --cards: 4;
+            --cardHeight: 87vh;
+            --cardTopPadding: 1.5em;
+            --cardMargin: 4vw;
+        }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
 
-#cards {
-	list-style: none;
-	padding-left: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(var(--cards), var(--cardHeight));
-	gap: var(--cardMargin);
-	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
-	margin-bottom: var(--cardMargin);
-}
+        #cards {
+            list-style: none;
+            padding-left: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(var(--cards), var(--cardHeight));
+            gap: var(--cardMargin);
+            padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+            margin-bottom: var(--cardMargin);
+        }
 
-#card1 {
-	--index: 1;
-}
-#card2 {
-	--index: 2;
-}
-#card3 {
-	--index: 3;
-}
-#card4 {
-	--index: 4;
-}
+        #card1 {
+            --index: 1;
+        }
 
-.card {
-	position: sticky;
-	top: 0;
-	padding-top: calc(var(--index) * var(--cardTopPadding));
-}
+        #card2 {
+            --index: 2;
+        }
 
-#card1 .card-body {
-	background-color:#f4f2ef;
-}
-#card2 .card-body {
-	/* background-color: #7EC4CF; */
-	background-color: #e5dbeb;
-}
-#card3 .card-body {
-	background-color: #d2e8c8;
-}
-#card4 .card-body {
-	background-color: #dce4ea;
-}
+        #card3 {
+            --index: 3;
+        }
 
-.card-body {
-	box-sizing: border-box;
-	padding: 30px;
-	border-radius: 50px;
-	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
-	height: var(--cardHeight);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.5s;
-}
+        #card4 {
+            --index: 4;
+        }
 
-h2 {
-	font-size: 2.5em;
-}
+        .card {
+            position: sticky;
+            top: 0;
+            padding-top: calc(var(--index) * var(--cardTopPadding));
+        }
 
-/* other styling */
+        #card1 .card-body {
+            background-color: #f4f2ef;
+        }
 
-body {
+        #card2 .card-body {
+            /* background-color: #7EC4CF; */
+            background-color: #e5dbeb;
+        }
+
+        #card3 .card-body {
+            background-color: #d2e8c8;
+        }
+
+        #card4 .card-body {
+            background-color: #dce4ea;
+        }
+
+        .card-body {
+            box-sizing: border-box;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+            height: var(--cardHeight);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        /* other styling */
+
+        body {
             font-family: sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f1efeb;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -181,85 +189,87 @@ body {
 
         /* checking code */
         .left {
-  width: 50%;
-  padding: 20px;
-}
+            width: 50%;
+            padding: 20px;
+        }
 
-.right {
-  width: 50%;
-  padding: 20px;
-}
+        .right {
+            width: 50%;
+            padding: 20px;
+        }
 
-.right img {
-  max-width: 100%;
-  height: auto;
-  margin-right: 0px;
-}
+        .right img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 0px;
+        }
 
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
 
-.description {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
 
-.features {
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
+        .features {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
 
-.feature {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
 
-.feature .icon {
-  margin-right: 10px;
-}
+        .feature .icon {
+            margin-right: 10px;
+        }
 
-.feature .text {
-  font-size: 16px;
-  background-color: #e5dbeb;
-  padding: 8px;
-  border-radius: 30px;
-}
+        .feature .text {
+            font-size: 16px;
+            background-color: #e5dbeb;
+            padding: 8px;
+            border-radius: 30px;
+        }
 
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-left: 20px;
-}
-img{
-    border-radius: 20px;
-}
-.trainingbtn{
-    padding: 20px;
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-    font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 30px;
-}
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+        }
 
+        img {
+            border-radius: 20px;
+        }
+
+        .trainingbtn {
+            padding: 20px;
+            padding-left: 35px;
+            padding-right: 35px;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 30px;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <ul id="cards">
@@ -267,113 +277,122 @@ img{
                 <div class="card-body">
                     <div class="left">
                         <h1 class="title">Web design & Development</h1>
-                        <p class="description">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                        <p class="description">A Website is an extension of yourself and we can help you to express it
+                            properly. Your website is your number one marketing asset because we live in a digital age.
+                        </p>
                         <div class="features">
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text"><i class="fa-solid fa-circle-check"></i>Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text"><i class="fa-solid fa-circle-check"></i>Awesome visual identities &
+                                    logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
                         </div>
                         <a href="#" class="button">View Project →</a>
-                      </div>
-                      <div class="right">
+                    </div>
+                    <div class="right">
                         <img src="V (3).png" alt="Web design & development">
-                      </div>
+                    </div>
                 </div>
             </li>
             <li class="card" id="card2">
                 <div class="card-body">
                     <div class="left">
                         <h1 class="title">Web design & Development</h1>
-                        <p class="description">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                        <p class="description">A Website is an extension of yourself and we can help you to express it
+                            properly. Your website is your number one marketing asset because we live in a digital age.
+                        </p>
                         <div class="features">
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
                         </div>
                         <a href="#" class="button">View Project →</a>
-                      </div>
-                      <div class="right">
+                    </div>
+                    <div class="right">
                         <img src="V (3).png" alt="Web design & development">
-                      </div>
+                    </div>
                 </div>
             </li>
             <li class="card" id="card3">
                 <div class="card-body">
                     <div class="left">
                         <h1 class="title">Web design & Development</h1>
-                        <p class="description">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                        <p class="description">A Website is an extension of yourself and we can help you to express it
+                            properly. Your website is your number one marketing asset because we live in a digital age.
+                        </p>
                         <div class="features">
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
                         </div>
                         <a href="#" class="button">View Project →</a>
-                      </div>
-                      <div class="right">
+                    </div>
+                    <div class="right">
                         <img src="V (3).png" alt="Web design & development">
-                      </div>
+                    </div>
                 </div>
             </li>
             <li class="card" id="card4">
                 <div class="card-body">
                     <div class="left">
                         <h1 class="title">Web design & Development</h1>
-                        <p class="description">A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.</p>
+                        <p class="description">A Website is an extension of yourself and we can help you to express it
+                            properly. Your website is your number one marketing asset because we live in a digital age.
+                        </p>
                         <div class="features">
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
-                          <div class="feature">
-                            <i class="icon">✓</i>
-                            <span class="text">Awesome visual identities & logo(s)</span>
-                          </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
+                            <div class="feature">
+                                <i class="icon">✓</i>
+                                <span class="text">Awesome visual identities & logo(s)</span>
+                            </div>
                         </div>
                         <a href="#" class="button">View Project →</a>
-                      </div>
-                      <div class="right">
+                    </div>
+                    <div class="right">
                         <img src="V (3).png" alt="Web design & development">
-                      </div>
+                    </div>
                 </div>
             </li>
         </ul>
         <center><button type="button" class="trainingbtn">View All Training</button></center>
     </div>
 
-	<!-- other code -->
+    <!-- other code -->
 
-	<div class="container">
+    <div class="container">
         <div class="header">
             <div class="logo">
                 <a onclick="showContent('about', this)">About</a>
@@ -537,6 +556,7 @@ img{
             element.classList.add('active');
         }
     </script>
-	<!-- Hiii -->
+    <!-- Hiii -->
 </body>
+
 </html>
