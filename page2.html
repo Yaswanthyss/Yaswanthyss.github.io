@@ -59,12 +59,13 @@
         }
 
         .text-content {
-            flex: 1;
+            width: 10000px;
+            margin-left: 20px;
         }
 
         .text-content h1 {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .text-content p {
@@ -107,14 +108,14 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <a href="#">FDP Program</a>
+                <a onclick="showContent('about', this)">About</a>
             </div>
             <div class="nav">
-                <a onclick="showContent('about', this)">About</a>
                 <a onclick="showContent('handson', this)">Hand's On</a>
                 <a onclick="showContent('workshops', this)">Workshops</a>
                 <a onclick="showContent('lectures', this)">Lectures</a>
                 <a onclick="showContent('fdps', this)">FDP'S</a>
+                <a onclick="showContent('sttp', this)">STTP</a>
             </div>
         </div>
         <div id="dynamic-content" class="content">
@@ -122,9 +123,17 @@
                 <h1>Our Successful Completion on FDP Program at IIT Madras</h1>
                 <p>Helping startups and brands to craft expressive and engaging solutions for their software needs.</p>
                 <button class="button">Contact Me</button>
+                <div class="image-content">
+                    <img style="margin-top: 215px; width: 50%; margin-left: 260px;"
+                        src="https://ih1.redbubble.net/image.1225320026.5988/mp,840x830,matte,f8f8f8,t-pad,1000x1000,f8f8f8.u3.jpg"
+                        alt="FDP Program at IIT Madras">
+                </div>
             </div>
+
+
             <div class="image-content">
-                <img src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
                     alt="FDP Program at IIT Madras">
             </div>
         </div>
@@ -157,8 +166,15 @@
                         <p>Details about the FDP Program and its benefits.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://via.placeholder.com/600x400" alt="About FDP Program">
-                    </div>
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
                 `,
                 handson: `
                     <div class="text-content">
@@ -166,8 +182,15 @@
                         <p>Information about the hands-on sessions conducted during the FDP Program.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://via.placeholder.com/600x400" alt="Hand's On Sessions">
-                    </div>
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
                 `,
                 workshops: `
                     <div class="text-content">
@@ -175,8 +198,15 @@
                         <p>Details of various workshops organized during the FDP Program.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://via.placeholder.com/600x400" alt="Workshops">
-                    </div>
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
                 `,
                 lectures: `
                     <div class="text-content">
@@ -184,8 +214,15 @@
                         <p>Overview of lectures delivered during the FDP Program.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://via.placeholder.com/600x400" alt="Lectures">
-                    </div>
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
                 `,
                 fdps: `
                     <div class="text-content">
@@ -193,9 +230,32 @@
                         <p>General information about various FDP Programs.</p>
                     </div>
                     <div class="image-content">
-                        <img src="https://via.placeholder.com/600x400" alt="FDP'S">
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+                `,
+                sttp: `
+                <div class="text-content">
+                        <h1>STTP</h1>
+                        <p>General information about various STTP Programs.</p>
                     </div>
-                `
+                    <div class="image-content">
+                <img style="margin-top: 500px;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            <div class="image-content">
+                <img style="margin-top: 300px; margin-right: 600px; float: left;"
+                    src="https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/file-teaching-skills-1605625101.jpg"
+                    alt="FDP Program at IIT Madras">
+            </div>
+            `
             };
 
             document.getElementById('dynamic-content').style.opacity = 0;
@@ -204,7 +264,7 @@
                 document.getElementById('dynamic-content').style.opacity = 1;
             }, 500);
 
-            const navLinks = document.querySelectorAll('.nav a');
+            const navLinks = document.querySelectorAll('.container a');
             navLinks.forEach(link => link.classList.remove('active'));
             element.classList.add('active');
         }
