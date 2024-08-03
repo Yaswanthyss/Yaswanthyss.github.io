@@ -101,6 +101,36 @@
         .stat {
             text-align: center;
         }
+
+        .about-button {
+            background-color: gray;
+            /* Green background */
+            border: none;
+            /* Remove borders */
+            color: white;
+            /* White text */
+            padding: 11.5px 30px;
+            /* Some padding */
+            text-align: center;
+            /* Center the text */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Make the button inline */
+            font-size: 16px;
+            /* Increase font size */
+            margin: 2px 2px;
+            /* Some margin */
+            cursor: pointer;
+            /* Pointer/hand icon */
+            border-radius: 20px;
+            /* Rounded corners */
+        }
+
+        .about-button:hover {
+            background-color: black;
+            /* Darker green on hover */
+        }
     </style>
 </head>
 
@@ -108,7 +138,7 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <a onclick="showContent('about', this)">About</a>
+                <button class="about-button">About</button>
             </div>
             <div class="nav">
                 <a onclick="showContent('handson', this)">Hand's On</a>
@@ -117,6 +147,7 @@
                 <a onclick="showContent('fdps', this)">FDP'S</a>
                 <a onclick="showContent('sttp', this)">STTP</a>
             </div>
+            <!--Hii-->
         </div>
         <div id="dynamic-content" class="content">
             <div class="text-content">
