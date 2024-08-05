@@ -399,6 +399,46 @@
         /* Darker green on hover */
       }
       @import url('https://fonts.cdnfonts.com/css/satoshi');
+
+      /* skeleton code checking */
+      /* Add these lines in your existing <style> tag */
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  display: inline-block;
+  height: 500px; /* Adjust height as needed */
+  width: 100%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f0f0f0;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+.skeleton-wrapper {
+  position: relative;
+}
+
+.skeleton-wrapper img {
+  display: none;
+}
+
+.skeleton-wrapper.loaded img {
+  display: block;
+}
+
+.skeleton-wrapper.loaded .skeleton {
+  display: none;
+}
+/* skeleton code ends here */
     </style>
   </head>
 
@@ -437,7 +477,10 @@
               <a href="#" class="button">View Project →</a>
             </div>
             <div class="right">
-              <img src="genai2 (1).jpg" alt="Generative AI " />
+              <div class="skeleton-wrapper">
+                <div class="skeleton"></div>
+              <img src="genai2 (1).jpg" onload="hideSkeleton(this)"  alt="Generative AI "/>
+              </div>
             </div>
           </div>
         </li>
@@ -731,6 +774,10 @@
         navLinks.forEach((link) => link.classList.remove("active"));
         element.classList.add("active");
       }
+      function hideSkeleton(img) {
+    img.style.display = 'block';
+    img.previousElementSibling.style.display = 'none';
+}
     </script>
     <!-- Hiii -->
   </body>
